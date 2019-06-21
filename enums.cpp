@@ -16,4 +16,21 @@ int main()
 	{
 		cout << "Of course not red!" << "\n";
 	}
+
+
+	enum class Direction {kUp, kDown, kRight, kLeft};
+
+	Direction a = Direction::kRight;
+
+	switch(a)
+	{
+		case Direction::kUp : cout << "Going up!" << "\n";
+			break;
+		case Direction::kDown : cout << "Going down!" << "\n";
+			break;
+		case Direction::kRight : cout << "Going right!" << "\n";
+			break;	
+		case Direction::kLeft : cout << "Going left!" << "\n";
+			break;
+	}
 }
